@@ -2,7 +2,8 @@ FROM python:3.6-alpine
 
 RUN adduser -D microblog
 
-WORKDIR /home/microblog
+#WORKDIR /home/microblog
+WORKDIR "/workspace/microblog"
 
 COPY requirements.txt requirements.txt
 RUN python -m venv venv
